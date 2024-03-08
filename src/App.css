@@ -1,10 +1,29 @@
 .App {
   text-align: center;
+  text-decoration: none;
+}
+input {
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+button {
+  padding: 12px 20px;
+  margin: 8px 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+  margin: 20px 0;
+  max-width: 630px;
+  padding: 20px 16px 24px 16px;
+  margin-left: auto;
+  margin-right: auto;
+}
+footer {
+  text-align: center;
 }
 
 @media (prefers-reduced-motion: no-preference) {
