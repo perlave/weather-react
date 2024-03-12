@@ -9,9 +9,11 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <div className="App">
-      <h2>Weather App</h2>
-      <App />
-      <br />
+      <div className="container">
+        <h2>Weather App</h2>
+        <App />
+        <br />
+      </div>
     </div>
   </React.StrictMode>
 );
