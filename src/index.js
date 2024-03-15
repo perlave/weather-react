@@ -3,17 +3,14 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import "bootstrap/dist/css/bootstrap.css";
 import App from "./App";
+
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <div className="App">
-      <div className="container">
-        <h2>Weather App</h2>
-        <App />
-        <br />
-      </div>
+      <App />
     </div>
   </React.StrictMode>
 );

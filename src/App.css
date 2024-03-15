@@ -1,29 +1,51 @@
-.App {
-  text-align: center;
-  text-decoration: none;
-}
-input {
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
+.Weather {
+  font-family: arial, sans-serif;
+  border: 1px solid #dadde1;
+  padding: 16px;
   border-radius: 4px;
-}
-button {
-  padding: 12px 20px;
-  margin: 8px 0;
+  color: rgb(135, 135, 135);
 }
 
-.container {
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
-  margin: 20px 0;
-  max-width: 630px;
-  padding: 20px 16px 24px 16px;
-  margin-left: auto;
-  margin-right: auto;
+.Weather h1 {
+  font-size: 24px;
+  font-weight: 100;
+  margin: 20px 0 0 0;
+  line-height: 29px;
 }
-footer {
-  text-align: center;
+
+.Weather ul {
+  margin: 0;
+  padding: 0;
+}
+
+.Weather li {
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 19px;
+  list-style: none;
+}
+
+.Weather .temperature {
+  font-weight: bold;
+  color: rgb(33, 33, 33);
+  font-size: 64px;
+  line-height: 1px;
+  margin-left: 5px;
+  font-weight: 400;
+  margin-left: 100px;
+}
+
+.Weather img {
+  padding-top: 9px;
+  margin-right: 5px;
+}
+
+.Weather .units {
+  color: rgb(33, 33, 33);
+  font-size: 19px;
+  font-weight: 400;
+  position: relative;
+  top: -34px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
