@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
+import WeatherForecast from "./WeatherForecast";
 
 import "./App.css";
 
@@ -16,8 +17,9 @@ export default function Weather(props) {
       date: new Date(response.data.dt * 1000),
       wind: response.data.wind.speed,
       humidity: response.data.main.humidity,
-      imgUrl: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+      icon: response.data.weather[0].icon,
       description: response.data.weather[0].description,
+      coordinates: response.data.coord,
     });
   }
 
@@ -52,8 +54,9 @@ export default function Weather(props) {
             <div className="col-3">
               <input type="submit" value="search" className="btn btn-primary" />
             </div>
+            <WeatherInfo data={weatherData} />
           </div>
-          <WeatherInfo data={weatherData} />
+          <WeatherForecast coordinates={weatherData.coordinates} />
         </form>
       </div>
     );

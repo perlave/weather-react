@@ -9,7 +9,7 @@ export default function App() {
         <Weather defaultCity="Oregon" />
 
         <footer>
-          This project was coded by Perla Velazquez
+          This project was coded by Perla Velazquez {""}
           <a
             href="https://github.com/perlave/weather-react"
             target="_blank"
